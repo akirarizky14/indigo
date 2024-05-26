@@ -1,0 +1,54 @@
+.container-products {
+    width: 100%;
+    height: 100vh;
+    background-color: #c30808;
+    display: flex;
+}
+
+.container-products img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.kms-product,
+.qonnectiq-product,
+.golden-diary-product,
+.crown-car-product {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+    transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.kms-product:hover,
+.qonnectiq-product:hover,
+.golden-diary-product:hover,
+.crown-car-product:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.kms-product {
+    background: url(../../assets/koperasi-b.jpg);
+}
+
+.qonnectiq-product {
+    background: url(../../assets/qonnectiq-b.webp);
+}
+
+.golden-diary-product {
+    background: url(../../assets/Golden.jpg);
+    background-size: cover; /* Ensure background image covers the entire container */
+}
+
+.crown-car-product {
+    background: url(../../assets/crown.png);
+}
+
+.container-products a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure link text color matches the parent */
+}
