@@ -18,10 +18,11 @@
     width: 25%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: none;
-    transition: transform 0.3s ease; /* Add transition for transform property */
+    transition: transform 0.3s ease;
 }
 
 .kms-product:hover,
@@ -30,7 +31,14 @@
 .crown-car-product:hover {
     transform: scale(1.1); /* Increase size on hover */
 }
-
+.kms-product h1,
+.qonnectiq-product h1,
+.golden-diary-product h1,
+.crown-car-product h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
 .kms-product {
     background: url(../../assets/koperasi-b.jpg);
 }

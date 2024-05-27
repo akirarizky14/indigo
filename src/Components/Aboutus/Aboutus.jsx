@@ -1,9 +1,12 @@
+import { useTheme } from '@mui/material/styles';
 import '../../css/Aboutus/Aboutus.css'
 import '../../css/Loading/Loading.css'
 
 export default function Aboutus(){
+    const theme = useTheme();
+
     return(
-        <div className="container-aboutus">
+        <div className={`container-aboutus`} style={{ backgroundColor: theme.palette.background.plain , color:theme.palette.text.primary }}>
             <div className="content-aboutus">
                 <div className="title-aboutus">
                     <h2>PT. Indigo Sarana Abadi</h2>

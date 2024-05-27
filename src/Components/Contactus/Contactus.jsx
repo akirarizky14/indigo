@@ -1,27 +1,29 @@
-import { Divider } from '@mui/material'
+import { Button, Divider, TextField, useTheme } from '@mui/material'
 import logo from '../../assets/Logo.png'
 import '../../css/Contactus/Contactus.css'
-import Chip from '@mui/material/Chip';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
+
 export default function Contactus(){
+    const theme = useTheme();
     return(
-        <div className="container-contactus">
+        <div className={`container-contactus`} style={{ backgroundColor: theme.palette.background.plain , color:theme.palette.text.primary}}>
             <div className="wrapper-contactus">
-                <div className="top-contactus">
-                    <img src={logo} alt="" />
+                <div className="left-contactus">
+                    <img src="" alt="" />
                 </div>
-                <div className="middle-contactus">
-                    <Divider><span>Thank you for your interest in Indigo Sarana Abadi</span></Divider>
-                    <Divider><span>Please Contact us On</span></Divider>
-                </div>
-                <div className="bottom-contactus">
-                    <InstagramIcon className='icon'/>
-                    <LinkedInIcon className='icon'/>
-                    <WhatsAppIcon className='icon'/>
-                    <EmailIcon className='icon'/>
+                <div className="right-contactus">
+                    <h1>Let's Connect with us</h1>
+                    <div className="container-text-contactus">
+                        <div className="identity-text-contactus">
+                            <TextField style={{width:'50%'}} label="Name"/>
+                            <TextField style={{width:'50%'}} label="Email"/>
+                        </div>
+                        <TextField multiline rows={4} label="Pesan/Komentar"/>
+                        <Button style={{width:'10%'}} variant='outlined'>Kirim</Button>
+                    </div>
                 </div>
             </div>
         </div>
