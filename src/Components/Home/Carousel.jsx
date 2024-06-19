@@ -3,6 +3,7 @@ import '../../css/Home/Carousel.css';
 import video from '../../assets/Video.mp4';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
+import photo from '../../assets/moddle.jpg'
 export default function Carousel() {
     const videoRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
@@ -19,11 +20,11 @@ export default function Carousel() {
 
     return (
         <div className="container-carousel">
-            <video ref={videoRef} src={video} autoPlay muted={isMuted} loop></video>
-            {/* <h1>Explore Our Products</h1> */}
+            {/* <video ref={videoRef} src={video} autoPlay muted={isMuted} loop></video>
             <button className="mute-button" onClick={handleToggleMute}>
                 {isMuted ? <VolumeDownIcon/> : <VolumeOffIcon/> }
-            </button>
+            </button> */}
+            <img src={photo} alt="" />
         </div>
     );
 }

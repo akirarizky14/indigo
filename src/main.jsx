@@ -18,12 +18,12 @@ const Root = () => {
         main: '#dc004e',
       },
       background: {
-        default: 'rgba(255, 255, 255, 0.3)',
+        default: 'rgba(255, 255, 255, 0.7)',
         plain: 'rgba(255, 255, 255)',
       },
       text: {
         primary: '#000000',
-        secondary: '#424242',
+        secondary: '#eeeeee',
       },
     },
   });

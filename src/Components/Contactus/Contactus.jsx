@@ -1,18 +1,13 @@
-import { Button, Divider, TextField, useTheme } from '@mui/material'
-import logo from '../../assets/Logo.png'
+import { Button, TextField, useTheme } from '@mui/material'
 import '../../css/Contactus/Contactus.css'
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import EmailIcon from '@mui/icons-material/Email';
-
+import ContactUs from '../../assets/contact-us.png'
 export default function Contactus(){
     const theme = useTheme();
     return(
         <div className={`container-contactus`} style={{ backgroundColor: theme.palette.background.plain , color:theme.palette.text.primary}}>
             <div className="wrapper-contactus">
                 <div className="left-contactus">
-                    <img src="" alt="" />
+                    <img src={ContactUs} alt="Contact Us" />
                 </div>
                 <div className="right-contactus">
                     <h1>Let's Connect with us</h1>

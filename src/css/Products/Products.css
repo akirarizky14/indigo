@@ -1,8 +1,8 @@
 .container-products {
     width: 100%;
     height: 100vh;
-    background-color: #c30808;
     display: flex;
+    background-color: black;
 }
 
 .container-products img {
@@ -23,6 +23,7 @@
     align-items: center;
     text-transform: none;
     transition: transform 0.3s ease;
+    opacity: 40%;
 }
 
 .kms-product:hover,
@@ -30,6 +31,8 @@
 .golden-diary-product:hover,
 .crown-car-product:hover {
     transform: scale(1.1); /* Increase size on hover */
+    opacity: 100%;
+    z-index: 999;
 }
 .kms-product h1,
 .qonnectiq-product h1,
@@ -40,15 +43,15 @@
     font-weight: 800;
 }
 .kms-product {
-    background: url(../../assets/koperasi-b.jpg);
+    background: url(../../assets/koperasi.png);
 }
 
 .qonnectiq-product {
-    background: url(../../assets/qonnectiq-b.webp);
+    background: url(../../assets/q.png);
 }
 
 .golden-diary-product {
-    background: url(../../assets/Golden.jpg);
+    background: url(../../assets/Golden.png);
     background-size: cover; /* Ensure background image covers the entire container */
 }
 
