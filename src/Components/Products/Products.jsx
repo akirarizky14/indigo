@@ -15,7 +15,7 @@ export default function Products(){
                     Qonnectiq
                 </Button>
             </Link>
-            <Link to="https://www.google.com" className="golden-diary-product">
+            <Link to="https://www.instagram.com/goldendairy.id/" className="golden-diary-product">
                 <Button variant="contained" style={{backgroundColor: theme.palette.background.default ,color: theme.palette.text.primary}}>
                     Golden Dairy
                 </Button>
