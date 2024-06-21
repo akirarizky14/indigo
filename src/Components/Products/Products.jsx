@@ -10,7 +10,7 @@ export default function Products(){
                     Kita Makmur Sejati
                 </Button>
             </Link>
-            <Link to="qonnectiq.com" className="qonnectiq-product">
+            <Link to="https://qonnectiq.com" className="qonnectiq-product">
                 <Button variant="contained" style={{backgroundColor: theme.palette.background.default ,color: theme.palette.text.primary}}>
                     Qonnectiq
                 </Button>
