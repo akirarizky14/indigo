@@ -28,32 +28,37 @@ const Navbar = () => {
       <div className="wrapper-navbar">
         <div className="left-navbar">
           <img src={logo} alt="Logo" />
-          <Box sx={{ width: '100%' }}>
+          <Box className="Box">
             <Tabs
+              className="Tabs"
               value={value}
               onChange={handleChange}
               textColor="inherit"
               indicatorColor="primary"
             >
               <Tab
+                className="Tab"
                 value="one"
                 label="Home"
                 onClick={() => handleScroll('home', 'one')}
                 sx={{ color: theme.palette.text.primary }}
               />
               <Tab
+                className="Tab"
                 value="two"
                 label="About Us"
                 onClick={() => handleScroll('about-us', 'two')}
                 sx={{ color: theme.palette.text.primary }}
               />
               <Tab
+                className="Tab"
                 value="three"
                 label="Products"
                 onClick={() => handleScroll('products', 'three')}
                 sx={{ color: theme.palette.text.primary }}
               />
               <Tab
+                className="Tab-cs"
                 value="four"
                 label="Contact Us"
                 onClick={() => handleScroll('contact-us', 'four')}
@@ -64,7 +69,7 @@ const Navbar = () => {
         </div>
         <div className="right-navbar">
           <div onClick={toggleDarkMode} className="icon-lang">
-            {darkMode ? <Brightness7Icon /> : <Brightness4Icon style={{color:theme.palette.text.primary}} />}
+            {darkMode ? <Brightness7Icon /> : <Brightness4Icon style={{ color: theme.palette.text.primary }} />}
           </div>
         </div>
       </div>

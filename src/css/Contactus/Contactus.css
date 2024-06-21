@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    min-width: 380px;
 }
 .wrapper-contactus{
     width: 100%;
@@ -34,6 +35,9 @@
     align-items: center;
     gap: 5%;
 }
+.right-contactus h1{
+    font-size: 24px;
+}
 .container-text-contactus{
     display: flex;
     flex-direction: column;
@@ -46,4 +50,114 @@
     height: 20%;
     display: flex;
     gap: 5%;
+}
+
+@media screen and (max-width:1024px){
+    .container-contactus{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .wrapper-contactus{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-contactus{
+        width: 40%;
+        height: 80%;
+        background-color: aliceblue;
+    }
+    .left-contactus img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .right-contactus{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .right-contactus h1{
+        font-size: 18px;
+    }
+    .container-text-contactus{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 70%;
+        gap: 5%;
+    }
+    .identity-text-contactus{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width:728px){
+    .container-contactus{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .wrapper-contactus{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-contactus{
+        width: 40%;
+        height: 80%;
+        background-color: aliceblue;
+    }
+    .left-contactus img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .right-contactus{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .right-contactus h1{
+        font-size: 16px;
+    }
+    .container-text-contactus{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 70%;
+        gap: 5%;
+    }
+    .identity-text-contactus{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        gap: 5%;
+    }
 }

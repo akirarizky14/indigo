@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container-navbar {
     position: fixed;
     top: 0;
@@ -10,6 +15,7 @@
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     color: #ffffff;
+    min-width: 380px;
 }
 .wrapper-navbar{
     width: 70%;
@@ -17,11 +23,20 @@
     display: flex;
 }
 .left-navbar{
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     align-items: center;
     gap: 5%;
+}
+
+.left-navbar .Tabs{
+    width: 100%;
+}
+.left-navbar .Tab-cs{
+    width: 108px;
+    height: 10px;
+    font-size: 12px;
 }
 .left-navbar img{
     width: 100px;
@@ -29,8 +44,15 @@
     object-fit: cover;
     cursor: pointer;
 }
+.left-navbar .Box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .right-navbar{
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,4 +66,149 @@
 }
 .right-navbar .icon-lang{
     cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .container-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        z-index: 1000; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        color: #ffffff;
+    }
+    .wrapper-navbar{
+        width: 80%;
+        height: 80%;
+        display: flex;
+    }
+    .left-navbar{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3%;
+    }
+    .left-navbar .Box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-navbar .Tabs{
+        width: 100%;
+    }
+    .left-navbar .Tab{
+        width: 108px;
+        height: 10px;
+        font-size: 12px;
+    }
+    .left-navbar .Tab-cs{
+        width: 108px;
+        height: 10px;
+        font-size: 12px;
+    }
+    .left-navbar img{
+        width: 80px;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .right-navbar{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+    }
+    .right-navbar{
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .right-navbar .icon-lang{
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:728px){
+    .container-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        z-index: 1000; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        color: #ffffff;
+    }
+    .wrapper-navbar{
+        width: 90%;
+        height: 80%;
+        display: flex;
+    }
+    .left-navbar{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+    }
+    .left-navbar .Box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-navbar .Tabs{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .left-navbar .Tab{
+        width: 28px;
+        height: 10px;
+        font-size: 10px;
+    }
+    .left-navbar .Tab-cs{
+        width: 108px;
+        height: 10px;
+        font-size: 10px;
+    }
+    .left-navbar img{
+        width: 80px;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .right-navbar{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+    }
+    .right-navbar{
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .right-navbar .icon-lang{
+        cursor: pointer;
+    }
 }

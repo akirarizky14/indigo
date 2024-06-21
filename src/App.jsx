@@ -24,7 +24,7 @@ function App() {
                 </div>
                 <div id="contact-us">
                     <Contactus />
-              </div>
+                </div>
               <Footer/>
           </BrowserRouter>
       </>

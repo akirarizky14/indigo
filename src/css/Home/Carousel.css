@@ -1,29 +1,23 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container-carousel {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
+    min-width: 380px;
+    overflow: hidden; /* Pastikan tidak ada overflow */
 }
-.container-carousel img{
+
+.container-carousel video {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-.container-carousel video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire container while maintaining its aspect ratio */
-}
-
-.container-carousel h1 {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Adjust text color for visibility */
-    font-size: 2em;
-    text-align: center;
-    z-index: 1; /* Ensure the text is above the video */
+    display: block; /* Menghilangkan white space bawah video */
 }
 
 .mute-button {
@@ -43,4 +37,15 @@
 
 .mute-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-carousel h1 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color for visibility */
+    font-size: 2em;
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the video */
 }
