@@ -8,18 +8,16 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 
 export default function Carousel() {
     const videoRef = useRef(null);
-    const [isMuted, setIsMuted] = useState(false);
+    const [isMuted, setIsMuted] = useState(true);
     const [currentVideo, setCurrentVideo] = useState(video);
 
     const handleToggleMute = () => {
         if (videoRef.current) {
-            if (isMuted) {
-                videoRef.current.muted = false;
-                videoRef.current.play();
-            } else {
-                videoRef.current.muted = true;
-            }
+            videoRef.current.muted = !isMuted;
             setIsMuted(!isMuted);
+            if (!isMuted) {
+                videoRef.current.play();
+            }
         }
     };
 
@@ -43,9 +41,7 @@ export default function Carousel() {
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.load();
-            videoRef.current.play().catch(error => {
-                console.log('Autoplay was prevented:', error);
-            });
+            videoRef.current.play();
         }
     }, [currentVideo]);
 
