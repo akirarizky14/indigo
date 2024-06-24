@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`container-navbar`} style={{ backgroundColor: theme.palette.background.default }}>
+    <nav className="container-navbar" style={{ backgroundColor: theme.palette.background.default }}>
       <div className="wrapper-navbar">
         <div className="left-navbar">
           <img src={logo} alt="Logo" />
@@ -35,6 +35,8 @@ const Navbar = () => {
               onChange={handleChange}
               textColor="inherit"
               indicatorColor="primary"
+              variant="scrollable"
+              scrollButtons="auto"
             >
               <Tab
                 className="Tab"

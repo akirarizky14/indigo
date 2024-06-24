@@ -152,63 +152,57 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         color: #ffffff;
     }
-    .wrapper-navbar{
+    
+    .wrapper-navbar {
         width: 90%;
-        height: 80%;
         display: flex;
-    }
-    .left-navbar{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 5%;
-    }
-    .left-navbar .Box{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
-    .left-navbar .Tabs{
-        width: auto;
-        height: 100%;
+    
+    .left-navbar {
         display: flex;
-        justify-content: center;
         align-items: center;
+        gap: 2%;
+    }
+    
+    .left-navbar .Box {
+        display: flex;
         overflow-x: auto;
     }
-    .left-navbar .Tab{
-        width: 28px;
-        height: 10px;
-        font-size: 10px;
+    
+    .left-navbar .Tabs {
+        display: flex;
+        white-space: nowrap;
     }
-    .left-navbar .Tab-cs{
-        width: 108px;
-        height: 10px;
-        font-size: 10px;
+    .left-navbar .Tab, .left-navbar .Tab{
+        width: 10px;
+        font-size: 9px;
+        cursor: pointer;
     }
-    .left-navbar img{
+    .left-navbar .Tab, .left-navbar .Tab-cs {
+        font-size: 8px;
+        cursor: pointer;
+    }
+    
+    .left-navbar img {
         width: 80px;
         height: auto;
         object-fit: cover;
         cursor: pointer;
     }
-    .right-navbar{
-        width: 10%;
-        height: 100%;
+    
+    .right-navbar {
         display: flex;
         align-items: center;
-        gap: 2%;
     }
-    .right-navbar{
-        font-size: 14px;
-        font-weight: 400;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .right-navbar .icon-lang{
+    
+    .right-navbar .icon-lang {
         cursor: pointer;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }    
 }
