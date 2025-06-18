@@ -25,6 +25,11 @@ export default function Products(){
                     Crown Car Rental
                 </Button>
             </Link>
+            <Link to="https://investing.groupisa.com" className="investing-product">
+                <Button variant="contained" style={{backgroundColor: theme.palette.background.default ,color: theme.palette.text.primary}}>
+                    Investing App
+                </Button>
+            </Link>
         </div>
     )
 }

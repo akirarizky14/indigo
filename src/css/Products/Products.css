@@ -15,7 +15,8 @@
 .kms-product,
 .qonnectiq-product,
 .golden-diary-product,
-.crown-car-product {
+.crown-car-product,
+.investing-product {
     width: 25%;
     height: 100%;
     display: flex;
@@ -30,7 +31,8 @@
 .kms-product:hover,
 .qonnectiq-product:hover,
 .golden-diary-product:hover,
-.crown-car-product:hover {
+.crown-car-product:hover,
+.investing-product:hover {
     transform: scale(1.1); /* Increase size on hover */
     opacity: 100%;
     z-index: 999;
@@ -38,17 +40,20 @@
 .kms-product h1,
 .qonnectiq-product h1,
 .golden-diary-product h1,
-.crown-car-product h1{
+.crown-car-product h1,
+.investing-product h1{
     text-align: center;
     font-size: 24px;
     font-weight: 800;
 }
 .kms-product {
     background: url(../../assets/koperasi.png);
+    background-size: cover;
 }
 
 .qonnectiq-product {
     background: url(../../assets/q.png);
+    background-size: cover;
 }
 
 .golden-diary-product {
@@ -58,6 +63,11 @@
 
 .crown-car-product {
     background: url(../../assets/crown.png);
+    background-size: cover;
+}
+.investing-product {
+    background: url(../../assets/investing.jpeg);
+    background-size: cover;
 }
 
 .container-products a {
