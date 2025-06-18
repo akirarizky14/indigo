@@ -25,10 +25,19 @@ export default function Products(){
                     Crown Car Rental
                 </Button>
             </Link>
-            <Link to="/investing" className="investing-product">
-                <Button variant="contained" style={{backgroundColor: theme.palette.background.default ,color: theme.palette.text.primary}}>
-                    Investing App
-                </Button>
+            <Link
+            to="/investing"
+            className="investing-product"
+            onClick={() => {
+                window.scrollTo(0, 0);
+            }}
+            >
+            <Button
+                variant="contained"
+                style={{ backgroundColor: theme.palette.background.default, color: theme.palette.text.primary }}
+            >
+                Investment Monitoring Tool
+            </Button>
             </Link>
         </div>
     )

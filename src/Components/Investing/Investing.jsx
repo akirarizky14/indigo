@@ -32,44 +32,45 @@ const features = [
   {
     title: '1. Strategic Asset Allocation (SAA)',
     details: [
-      'Penetapan target alokasi berdasarkan jenis aset (reksa dana dan obligasi)',
-      'Perbandingan aktual vs. target alokasi',
-      'Highlight deviasi dan kebutuhan rebalancing',
+      'Setting target allocation based on asset types (mutual funds and bonds)',
+      'Comparison of actual vs. target allocation',
+      'Highlight deviations and rebalancing needs',
     ],
   },
   {
-    title: '2. Pencatatan Transaksi Reksa Dana',
+    title: '2. Mutual Fund Transaction Recording',
     details: [
-      'Input transaksi pembelian dan penjualan reksa dana',
-      'Catatan NAB saat transaksi',
-      'Riwayat dan posisi saldo per produk',
+      'Input purchase and sale transactions of mutual funds',
+      'Record NAV at the time of transaction',
+      'History and balance position per product',
     ],
   },
   {
-    title: '3. Pencatatan Transaksi Obligasi',
+    title: '3. Bond Transaction Recording',
     details: [
-      'Input transaksi beli, jual, dan jatuh tempo obligasi',
-      'Catatan harga beli, kupon, dan yield',
-      'Jadwal penerimaan kupon dan pelunasan pokok',
+      'Input bond purchase, sale, and maturity transactions',
+      'Record purchase price, coupon, and yield',
+      'Schedule of coupon payments and principal repayments',
     ],
   },
   {
-    title: '4. Pemantauan Index Crossing',
+    title: '4. Index Crossing Monitoring',
     details: [
-      'Monitoring kinerja portofolio terhadap benchmark index',
-      'Peringatan saat return menyentuh/melampaui batas atas/bawah index',
-      'Grafik historis crossing vs. benchmark',
+      'Monitor portfolio performance against benchmark index',
+      'Alerts when returns reach/exceed upper or lower index limits',
+      'Historical chart of crossings vs. benchmark',
     ],
   },
   {
-    title: '5. Dashboard Ringkas',
+    title: '5. Summary Dashboard',
     details: [
-      'Visualisasi alokasi aktual',
-      'Tabel posisi dan nilai pasar',
-      'Rekap transaksi harian/mingguan',
+      'Visualization of actual allocation',
+      'Table of positions and market values',
+      'Daily/weekly transaction summary',
     ],
   },
 ];
+
 
 const heroSlides = [
   {
@@ -97,7 +98,7 @@ function Investing() {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 4000); // 4 detik per slide
 
-    return () => clearInterval(interval); // cleanup saat unmount
+    return () => clearInterval(interval);
   }, []);
   return (
     <Box
@@ -136,14 +137,15 @@ function Investing() {
 
         <Grid item xs={12} md={7}>
           <Typography variant="h5" gutterBottom>
-            Deskripsi Produk
+            Investment Monitoring Tool
           </Typography>
           <Typography variant="body1" paragraph>
-            Investment Monitoring Tool ini dirancang untuk mendukung fungsi dasar pengelolaan portofolio investasi...
+            This Investment Monitoring Tool is designed to support the basic functions of investment portfolio management, with a focus on transaction recording and asset allocation strategy oversight. It is well-suited for financial institutions such as pension funds, insurance companies, or wealth managers who require basic visibility and control over the assets they manage.
           </Typography>
 
+
           <Typography variant="h6" gutterBottom>
-            Fitur Utama
+            Main Feature
           </Typography>
           <List dense>
             {features.map((item, index) => (
