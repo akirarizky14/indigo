@@ -1,6 +1,6 @@
 import Carousel from "../../Components/Home/Carousel";
-import '../../css/Home/Carousel.css'
-import Aboutus from "../../Components/Aboutus/Aboutus";
+import '../../css/Home/Carousel.css';
+
 export default function Home(){
     return(
         <>

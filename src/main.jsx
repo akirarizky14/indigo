@@ -4,6 +4,7 @@ import './index.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { DarkModeProvider, useDarkMode } from './Components/Context/DarkModeContext.jsx';
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Root = () => {
   const { darkMode } = useDarkMode();
 
@@ -17,7 +18,8 @@ const Root = () => {
         main: '#dc004e',
       },
       background: {
-        default: 'rgba(255, 255, 255, 0.7)',
+        default: 'rgba(255, 255, 255)',
+        default1: 'rgba(255, 255, 255)',
         plain: 'rgba(255, 255, 255)',
       },
       text: {
@@ -38,6 +40,7 @@ const Root = () => {
       },
       background: {
         default: 'rgba(0, 0, 0, 0.2)',
+        default1: 'rgba(0, 0, 0)',
         paper: '#1d1d1d',
       },
       text: {

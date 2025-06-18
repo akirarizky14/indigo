@@ -1,0 +1,86 @@
+/* Investing.css */
+
+.investing-container {
+  padding-top: 150px;
+  padding-left: 32px; /* px={4} */
+  padding-right: 32px;
+  padding-bottom: 48px; /* pb={6} */
+  min-width: 380px;
+}
+
+.investing-feature-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.investing-feature-item {
+  margin-bottom: 4px;
+}
+
+.investing-placeholder-box {
+  width: 100%;
+  height: 380px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+
+
+.investing-thumbnail {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optional: you can add shadow or overlay effect here */
+}
+
+
+.investing-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.investing-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: linear-gradient(135deg, #27548A, #183B4E);
+  box-shadow: 0 4px 12px rgba(39, 84, 138, 0.3);
+}
+
+.investing-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(39, 84, 138, 0.4);
+}
+
+.investing-button:active {
+  transform: scale(0.98);
+}
+
+.investing-button.whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  box-shadow: 0 4px 12px rgba(18, 140, 126, 0.3);
+}
+
+.investing-button.whatsapp:hover {
+  box-shadow: 0 6px 18px rgba(18, 140, 126, 0.4);
+}
+
+@media (max-width: 780px) {
+  .investing-placeholder-box {
+    height: 180px;
+  }
+}

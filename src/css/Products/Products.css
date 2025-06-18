@@ -92,7 +92,8 @@
     .kms-product,
     .qonnectiq-product,
     .golden-diary-product,
-    .crown-car-product {
+    .crown-car-product,
+    .investing-product {
         width: 25%;
         height: 100%;
         display: flex;
@@ -107,7 +108,8 @@
     .kms-product:hover,
     .qonnectiq-product:hover,
     .golden-diary-product:hover,
-    .crown-car-product:hover {
+    .crown-car-product:hover,
+    .investing-product:hover {
         transform: scale(1.1); /* Increase size on hover */
         opacity: 100%;
         z-index: 999;
@@ -115,17 +117,20 @@
     .kms-product h1,
     .qonnectiq-product h1,
     .golden-diary-product h1,
-    .crown-car-product h1{
+    .crown-car-product h1,
+    .investing-product h1{
         text-align: center;
         font-size: 18px;
         font-weight: 700;
     }
     .kms-product {
         background: url(../../assets/koperasi.png);
+        background-size: cover;
     }
     
     .qonnectiq-product {
         background: url(../../assets/q.png);
+        background-size: cover;
     }
     
     .golden-diary-product {
@@ -135,8 +140,13 @@
     
     .crown-car-product {
         background: url(../../assets/crown.png);
+        background-size: cover;
     }
     
+    .investing-product {
+        background: url(../../assets/investing.jpeg);
+        background-size: cover;
+    }
     .container-products a {
         text-decoration: none; /* Remove underline */
         color: inherit; /* Ensure link text color matches the parent */
@@ -146,8 +156,9 @@
 @media screen and (max-width:728px){
     .container-products {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         display: flex;
+        flex-direction: column;
         background-color: black;
     }
     
@@ -160,8 +171,9 @@
     .kms-product,
     .qonnectiq-product,
     .golden-diary-product,
-    .crown-car-product {
-        width: 25%;
+    .crown-car-product,
+    .investing-product {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -175,38 +187,46 @@
     .kms-product:hover,
     .qonnectiq-product:hover,
     .golden-diary-product:hover,
-    .crown-car-product:hover {
-        transform: scale(1.1); /* Increase size on hover */
+    .crown-car-product:hover,
+    .investing-product:hover {
+        transform: scale(1.1);
         opacity: 100%;
         z-index: 999;
     }
     .kms-product h1,
     .qonnectiq-product h1,
     .golden-diary-product h1,
-    .crown-car-product h1{
+    .crown-car-product h1,
+    .investing-product h1{
         text-align: center;
         font-size: 12px;
         font-weight: 600;
     }
     .kms-product {
         background: url(../../assets/koperasi.png);
+        background-size: cover;
     }
     
     .qonnectiq-product {
         background: url(../../assets/q.png);
+        background-size: cover;
     }
     
     .golden-diary-product {
         background: url(../../assets/golden.png);
-        background-size: cover; /* Ensure background image covers the entire container */
+        background-size: cover; 
     }
     
     .crown-car-product {
         background: url(../../assets/crown.png);
+        background-size: cover;
     }
-    
+    .investing-product {
+        background: url(../../assets/investing.jpeg);
+        background-size: cover;
+    }
     .container-products a {
-        text-decoration: none; /* Remove underline */
-        color: inherit; /* Ensure link text color matches the parent */
+        text-decoration: none;
+        color: inherit; 
     }
 }
